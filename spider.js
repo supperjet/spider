@@ -12,7 +12,6 @@ var cheerio = require('cheerio')
 // }
 
 // 创建https get请求
-spiderMovie(2)
 function spiderMovie(index){
   https.get('https://movie.douban.com/top250?start='+index, function(res){
     var pageSize = 25
